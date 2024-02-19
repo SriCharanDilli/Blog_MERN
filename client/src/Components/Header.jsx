@@ -6,13 +6,13 @@ import { FaMoon } from "react-icons/fa";
 function Header() {
   const path = useLocation().pathname;
   return (
-    <Navbar className="border-b-2 bg-gray-300 mx-8 my-4 rounded-xl">
+    <Navbar className="border-b-2 bg-blue-200 mx-8 my-4 rounded-xl">
       <Link
         to="/"
         className="self-center whitespace-nowrap text-sm sm:text-2xl font-semibold dark:text-white"
       >
         Buzz
-        <span className="px-2 py-1 bg-gradient-to-r from-purple-600 to-blue-500 rounded-lg">
+        <span className="px-2 py-1 bg-gradient-to-r from-purple-600 to-blue-500 rounded-lg border-black">
           Byte
         </span>
       </Link>
@@ -54,7 +54,7 @@ function Header() {
         </Button>
 
         <Link to="/signin">
-          <Button className="border-black" gradientDuoTone="purpleToBlue">
+          <Button className="border-black" gradientDuoTone="purpleToBlue"outline>
             Sign In
           </Button>
         </Link>
