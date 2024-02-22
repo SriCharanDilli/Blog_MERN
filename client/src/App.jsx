@@ -5,6 +5,7 @@ import About from './Pages/About'
 import SignIn from './Pages/SignIn'
 import Projects from './Pages/Projects'
 import Header from './Components/Header'
+import SignUp from './Pages/SignUp'
 function App() {
   return (
   <BrowserRouter>
@@ -13,6 +14,7 @@ function App() {
     <Route path='/' element={<Home/>}/>
     <Route path='/about' element={<About/>}/>
     <Route path='/signin' element={<SignIn/>}/>
+    <Route path='/signup' element={<SignUp/>}/>
     <Route path='/projects' element={<Projects/>}/>
 
   </Routes>
